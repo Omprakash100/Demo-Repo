@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'echo \'Hello Build\''
+        echo 'Hello Build'
       }
     }
 
@@ -11,13 +11,13 @@ pipeline {
       parallel {
         stage('Test') {
           steps {
-            echo 'echo \'test job\''
+            echo 'test job'
           }
         }
 
         stage('Best') {
           steps {
-            echo 'echo \'Best\''
+            echo 'Best'
           }
         }
 
@@ -26,7 +26,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        echo 'echo \'Deploy Hello\''
+        echo 'Deploy Hello'
       }
     }
 
